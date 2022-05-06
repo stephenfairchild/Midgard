@@ -34,7 +34,7 @@ pacman -S --noconfirm --needed chromium
 # Media
 pacman -S --noconfirm --needed pulseaudio pulseaudio-alsa pulseaudio-bluetooth \
 blueman bluez bluez-utils \
-alsa-utils
+alsa-utils sof-firmware
 
 # Languages
 pacman -S --noconfirm --needed ruby rustup nodejs python3 python2 perl go php
