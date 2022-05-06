@@ -9,7 +9,8 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # Install system packages
-pacman -S --noconfirm --needed neovim git zsh wget tmux tmuxp sed openssl openssh notification-daemon jq fzf dunst starship fuse2 dateutils
+pacman -S --noconfirm --needed neovim git zsh wget tmux tmuxp sed openssl openssh notification-daemon jq fzf dunst starship fuse2 dateutils \
+    usbutils
 
 # GUI + window server
 pacman -S --noconfirm --needed xorg-server xorg-xinit xorg-xrandr
@@ -29,12 +30,11 @@ thunar
 pacman -S --noconfirm --needed ttf-fira-code
 
 # Browser
-pacman -S --noconfirm --needed chromium
+pacman -S --noconfirm --needed brave
 
-# Media
+# Sound
 pacman -S --noconfirm --needed pulseaudio pulseaudio-alsa pulseaudio-bluetooth \
-blueman bluez bluez-utils \
-alsa-utils sof-firmware
+blueman bluez bluez-utils alsa-utils sof-firmware
 
 # Languages
 pacman -S --noconfirm --needed ruby rustup nodejs python3 python2 perl go php
@@ -43,7 +43,7 @@ pacman -S --noconfirm --needed ruby rustup nodejs python3 python2 perl go php
 pacman -S --noconfirm --needed python-neovim
 
 # Development
-pacman -S --noconfirm --needed kitty tmate mariadb aws-cli diff-so-fancy prettier the_silver_searcher npm
+pacman -S --noconfirm --needed kitty tmate mariadb aws-cli diff-so-fancy prettier the_silver_searcher npm xclip
 
 # Docker
 pacman -S --noconfirm --needed docker docker-compose
@@ -54,7 +54,5 @@ usermod -a -G docker stephen
 # Productivity
 pacman -S --noconfirm --needed lastpass-cli htop netcat
 
-# Install fly for deployments
-curl -L https://fly.io/install.sh | sh
-
-rustup component add rls rust-analysis rust-src
+## This is not working :(
+# rustup component add rls rust-analysis rust-src

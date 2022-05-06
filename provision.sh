@@ -49,8 +49,10 @@ git clone git@github.com:stephenfairchild/documents.git
 ## Install Dotfiles
 curl -o- https://raw.githubusercontent.com/stephenfairchild/Dotfiles/master/install.sh | bash
 
-# Copy in script files
-chown stephen:stephen /usr/local/bin && cd /usr/local/bin
+# Create the app directory and clone my scripts
+mkdir /home/stephen/Apps
+cd /home/stephen/apps
+chown stephen:stephen /home/stephen/Apps
 git clone git@github.com:stephenfairchild/usr-local-bin.git
 
 # Install getnf for font management in Kitty
