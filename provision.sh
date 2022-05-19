@@ -65,6 +65,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install node
 nvm use node
 
+# Install the vercel CLI
+npm install -g vercel
+
 ## Configure AWS credentials
 #aws configure
 #eval $(aws ecr get-login --no-include-email)
