@@ -60,7 +60,10 @@ git clone https://github.com/ronniedroid/getnf
 cd getnf
 ./install.sh
 
-
+# Install NVM and use the latest version of Node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install node
+nvm use node
 
 ## Configure AWS credentials
 #aws configure

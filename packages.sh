@@ -37,13 +37,13 @@ pacman -S --noconfirm --needed pulseaudio pulseaudio-alsa pulseaudio-bluetooth \
 blueman bluez bluez-utils alsa-utils sof-firmware
 
 # Languages
-pacman -S --noconfirm --needed ruby rustup nodejs python3 python2 perl go php
+pacman -S --noconfirm --needed ruby rustup python3 python2 perl go php
 
 # Code completion support in Vim
 pacman -S --noconfirm --needed python-neovim
 
 # Development
-pacman -S --noconfirm --needed kitty tmate mariadb aws-cli diff-so-fancy prettier the_silver_searcher npm xclip
+pacman -S --noconfirm --needed bat kitty tmate mariadb aws-cli diff-so-fancy prettier the_silver_searcher xclip
 
 # Docker
 pacman -S --noconfirm --needed docker docker-compose
