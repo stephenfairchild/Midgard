@@ -65,8 +65,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install node
 nvm use node
 
-# Install the vercel CLI
-npm install -g vercel
+# Install some JS development tools
+npm install -g vercel wrangler
 
 ## Configure AWS credentials
 #aws configure

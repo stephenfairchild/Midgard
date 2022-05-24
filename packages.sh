@@ -37,7 +37,7 @@ pacman -S --noconfirm --needed pulseaudio pulseaudio-alsa pulseaudio-bluetooth \
 blueman bluez bluez-utils alsa-utils sof-firmware
 
 # Languages
-pacman -S --noconfirm --needed ruby rustup python3 python2 perl go php
+pacman -S --noconfirm --needed ruby python3 python2 perl go php
 
 # Code completion support in Vim
 pacman -S --noconfirm --needed python-neovim
@@ -53,6 +53,8 @@ usermod -a -G docker stephen
 
 # Productivity
 pacman -S --noconfirm --needed lastpass-cli htop netcat
+
+curl https://sh.rustup.rs -sSf | sh
 
 ## This is not working :(
 # rustup component add rls rust-analysis rust-src
