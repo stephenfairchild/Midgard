@@ -7,7 +7,7 @@ i3, nvim, tmux, dotfiles, Lastpass.
 
 Then it loads my secret keys out of Lastpass and installs them in the correct locations.
 
-## Troubleshooting
+## System Troubleshooting
 
 Problem: Trying to `sudo pacman -Syu` gives some errors messages about outdated PGP signatures
 
